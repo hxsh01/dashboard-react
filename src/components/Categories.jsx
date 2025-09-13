@@ -27,7 +27,7 @@ export default function Categories({ searchQuery='' }){
 
             <div className="widgets-grid">
               {filtered.length === 0 ? (
-                <div className="empty">No widgets match the search.</div>
+                <div className="empty">No widgets</div>
               ) : filtered.map(w => (
                 <WidgetCard key={w.id} widget={w} categoryId={cat.id} />
               ))}
