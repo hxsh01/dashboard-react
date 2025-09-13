@@ -6,8 +6,18 @@ export default function SearchBar({ value = '', onChange = () => {} }) {
   const inputRef = useRef(null)
 
   useEffect(() => {
-    if (open) inputRef.current?.focus()
+    if (open) {
+      inputRef.current?.focus()
+    }
   }, [open])
+
+  const toggleSearch = () => {
+    if (open) {
+      // closing → clear input
+      onChange('')
+    }
+    setOpen(!open)
+  }
 
   return (
     <div
@@ -17,7 +27,7 @@ export default function SearchBar({ value = '', onChange = () => {} }) {
       <button
         type="button"
         className="search-icon-btn"
-        onClick={() => setOpen(!open)}
+        onClick={toggleSearch}
         aria-label={open ? 'Close search' : 'Open search'}
       >
         {open ? (
