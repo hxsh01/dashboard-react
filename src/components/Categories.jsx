@@ -16,6 +16,10 @@ export default function Categories({ searchQuery='' }){
     <div className="categories">
       {categories.map(cat => {
         const filtered = cat.widgets.filter(matches)
+
+        // hide entire category if no widgets match AND there is a search query
+        if (searchQuery.trim() && filtered.length === 0) return null
+
         return (
           <section key={cat.id} className="category">
             <div className="category-header">
@@ -28,9 +32,11 @@ export default function Categories({ searchQuery='' }){
             <div className="widgets-grid">
               {filtered.length === 0 ? (
                 <div className="empty">No widgets</div>
-              ) : filtered.map(w => (
-                <WidgetCard key={w.id} widget={w} categoryId={cat.id} />
-              ))}
+              ) : (
+                filtered.map((w) => (
+                  <WidgetCard key={w.id} widget={w} categoryId={cat.id} />
+                ))
+              )}
             </div>
           </section>
         )
