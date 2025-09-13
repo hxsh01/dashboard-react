@@ -7,7 +7,12 @@ This is a small React + Vite project implementing the dashboard assignment:
 - Search across widgets
 - Persistent state via localStorage
 
-## Quick start
+## Live link of the website
+   ```bash
+   https://dashboard-react-one-sigma.vercel.app/
+   ```
+
+## Steps to run the Code on your machine
 
 1. Install dependencies (Node >= 18 recommended):
    ```bash
