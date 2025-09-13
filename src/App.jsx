@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import Categories from './components/Categories'
 import AddCategoryForm from './components/AddCategoryForm'
-import SearchBar from './components/SearchBar'
+import SearchBar from './components/SearchBar/SearchBar'
 import { saveState, loadState } from './utils/localStorage'
 import { setAll } from './features/categoriesSlice'
 
@@ -27,7 +27,7 @@ export default function App(){
   return (
     <div className="app">
       <header className="header">
-        <h1>Dynamic Dashboard — Interview Assignment</h1>
+        <div className='header-title'>CNAPP Dashboard</div>
         <div className="header-actions">
           <SearchBar value={query} onChange={setQuery} />
           <AddCategoryForm />
