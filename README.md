@@ -1,4 +1,4 @@
-# Dashboard App (Interview Assignment)
+# Dashboard-react
 
 This is a small React + Vite project implementing the dashboard assignment:
 - JSON-driven categories & widgets
@@ -9,22 +9,17 @@ This is a small React + Vite project implementing the dashboard assignment:
 
 ## Quick start
 
-1. Extract the zip and `cd` into the project folder:
-   ```bash
-   cd dashboard-app
-   ```
-
-2. Install dependencies (Node >= 18 recommended):
+1. Install dependencies (Node >= 18 recommended):
    ```bash
    npm install
    ```
 
-3. Run the dev server:
+2. Run the dev server:
    ```bash
    npm run dev
    ```
 
-4. Open the URL shown by Vite (usually `http://localhost:5173`).
+3. Open the URL shown by Vite (usually `http://localhost:5173`).
 
 ## Notes / Extras included
 
@@ -39,10 +34,3 @@ This is a small React + Vite project implementing the dashboard assignment:
 - `src/components/*` — UI components (AddWidgetForm, AddCategoryForm, SearchBar, Categories, WidgetCard)
 - `src/utils/localStorage.js` — persistence helpers
 
-Good luck with your interview! If you'd like I can:
-- convert it to TypeScript
-- add drag-n-drop reordering
-- add unit tests
-- deploy a live preview
-
-Just ask which one you'd like next.
