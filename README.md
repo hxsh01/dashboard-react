@@ -26,7 +26,6 @@ This is a small React + Vite project implementing the dashboard assignment:
 - Uses Redux Toolkit for state management (`src/features/categoriesSlice.js`).
 - Uses `localStorage` to persist dashboard changes.
 - Small, clean UI with responsive grid layout.
-- Uses `uuid` for unique IDs so that widgets/categories won't collide.
 
 ## Files of interest
 
